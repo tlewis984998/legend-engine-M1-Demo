@@ -1,0 +1,19 @@
+{
+  "repo_notes": [
+    {"content": "Legend Engine: Pure compiler, execution engine and server for the FINOS Legend platform. About 610 Maven modules in four groups: legend-engine-core (Pure language, compiler, runtime), legend-engine-xts-relationalStore (relational and SQL), other legend-engine-xts-* extensions (external formats, service execution, function activators), and server/config modules. maven.compiler.release is 8 while CI builds on JDK 17."}
+  ],
+  "pages": [
+    {"title": "Repository overview", "purpose": "Module groups, how they depend on each other, and where to start reading"},
+    {"title": "Build and module structure", "purpose": "Root pom, Maven profiles, enforcer rules, build commands and build time"},
+    {"title": "Pure language and compiler", "purpose": "How Pure is parsed, compiled and executed"},
+    {"title": "Query execution pipeline", "purpose": "From a Pure query to an execution plan and results"},
+    {"title": "Pure to SQL translation", "purpose": "How relational queries become SQL across database extensions"},
+    {"title": "Relational store extensions", "purpose": "Database-specific modules and how they plug in"},
+    {"title": "External format extensions", "purpose": "JSON, XML, flat data and other format modules"},
+    {"title": "Service execution", "purpose": "How Legend services run, including from generated Java"},
+    {"title": "Server and APIs", "purpose": "Server modules, Dropwizard, Jetty and Jersey usage"},
+    {"title": "Testing and PCT", "purpose": "Test strategy, platform compatibility tests and how to run them"},
+    {"title": "CI and release", "purpose": "GitHub Actions workflows, JDK versions and release process"},
+    {"title": "Java 17 migration readiness", "purpose": "Compile target, enforcer rule, CI JDK, Java 8-era dependencies (Dropwizard, Jetty, Jersey, Jackson, Logback), reflection and SecurityManager usage, and what blocks a release 17 target"}
+  ]
+}
